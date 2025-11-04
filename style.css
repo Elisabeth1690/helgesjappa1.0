@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Use viewport height instead */
-  font-family: Arial, sans-serif;
+  font-family: Antiqua, Arial, sans-serif;
   text-align: center;
   background-color: #fafafa;
   color: #333;
