@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestillingsskjema – Charcuterie</title>
+        <link rel="icon" type="image/png" href="../image/favicon.jpg" />
+    <link rel="stylesheet" href="orderPages.css" />
+  </head>
+  <body>
+        <header>
+      <img src="../image/banner.jpg" alt="Helgesjappa banner" class="banner" />
+    </header>
+    <main>
+    <form action="https://formspree.io/f/mrgwzxyz" method="POST">
+      <h1>Bestillingsskjema – Charcuterie</h1>
+
+      <label for="navn">Navn:</label>
+      <input type="text" id="navn" name="Navn" required />
+
+      <label for="telefon">Telefonnummer:</label>
+      <input type="tel" id="telefon" name="Telefonnummer" required />
+
+      <label for="epost">E-postadresse:</label>
+      <input type="email" id="epost" name="E-post" required />
+
+      <h2>Hva ønsker du å bestille?</h2>
+<div class="checkbox-group">
+
+  <div class="bestilling-valg">
+    <div class="valg-header">
+      <strong>Charcuterie-brett Premium</strong>
+      <input type="checkbox" name="Bestilling" value="Charcuterie-brett Premium">
+    </div>
+    <p>
+      Et Premium charcuterie board byr på et delikat utvalg av spekemat og oster, kombinert med frukt, bær, nøtter, oliven, tørket frukt og små tilbehør som marmelade eller honning – en balansert og smakfull opplevelse.<br>
+      Premium-utgaven inkluderer nybakt focaccia, lefseruller, snackspaprika, pesto, aioli og et utvalg av kjeks ved siden av.
+    </p>
+  </div>
+
+  <div class="bestilling-valg">
+    <div class="valg-header">
+      <strong>Charcuterie-brett Standard</strong>
+      <input type="checkbox" name="Bestilling" value="Charcuterie-brett Standard">
+    </div>
+    <p>
+      Et Standard charcuterie board byr på et delikat utvalg av spekemat og oster, kombinert med frukt, bær, nøtter, oliven, tørket frukt og små tilbehør som marmelade eller honning i tillegg til et utvalg av kjeks – en balansert og smakfull opplevelse.<br>
+      Et standard brett leveres uten focaccia, lefseruller og snackspaprika – men mer av det andre.
+    </p>
+  </div>
+
+  <div class="bestilling-valg">
+    <div class="valg-header">
+      <strong>Charcuterie-gracing table</strong>
+      <input type="checkbox" name="Bestilling" value="Charcuterie-gracing table">
+    </div>
+    <p>
+      Et grazing table er et lekkert og innbydende buffetbord fylt med et variert utvalg av småretter som gjestene kan forsyne seg av gjennom hele arrangementet. Det er ofte satt opp som en dekorativ opplevelse, hvor maten presenteres på en estetisk måte med farger, teksturer og høyder som gjør bordet til en del av selve festen.<br><br>
+
+      <u>Typisk innhold inkluderer:</u><br>
+      – Charcuterie: Spekemat, oster, kjeks, brød, frukt, nøtter og små tilbehør som marmelader og dipper.<br>
+      – Friske elementer: Frukt, bær, grønnsaker og urter for farge og friskhet.<br>
+      – Søte innslag: Sjokolade, småkaker eller andre desserter.<br><br>
+
+      <u>I tillegg til maten sørger vi for:</u><br>
+      – Duk og underlag<br>
+      – Pynt og dekor som passer temaet<br>
+      – Fat, skåler og serveringsutstyr<br>
+      – Oppsett og styling av bordet slik at det ser fantastisk ut<br>
+      – Henting av utstyr dagen etter<br><br>
+
+      Kort sagt: Vi kommer med alt som trengs for å skape et komplett, smakfullt og visuelt imponerende grazing table – du trenger bare å nyte det!
+    </p>
+  </div>
+
+  <div class="bestilling-valg">
+    <div class="valg-header">
+      <strong>Charcuterie-bar</strong>
+      <input type="checkbox" name="Bestilling" value="Charcuterie-bar">
+    </div>
+    <p>
+      Charcuterie-baren vår kan leies med full servering – vi kommer, rigger opp baren og sørger for at gjestene får en smakfull charcuterie-opplevelse.<br>
+      Vi tar m
+
+
+      <h2>Størrelse / Mengde</h2>
+      <label for="antall-personer">Hvor mange personer skal spise?</label>
+      <input
+        type="number"
+        id="antall-personer"
+        name="Antall personer"
+        min="1" />
+
+      <label>Antall brett i størrelse S (898,- / 2–3 pers):</label>
+      <input type="number" name="Antall S" min="0" />
+
+      <label>Antall brett i størrelse M (1596,- / 4–5 pers):</label>
+      <input type="number" name="Antall M" min="0" />
+
+      <label>Antall brett i størrelse L (2394,- / 6–8 pers):</label>
+      <input type="number" name="Antall L" min="0" />
+
+      <label>Antall brett i størrelse XL (3192,- / 8–10 pers):</label>
+      <input type="number" name="Antall XL" min="0" />
+
+      <h2>Allergier</h2>
+      <div class="allergies">
+        <label
+          ><input type="checkbox" name="Allergier" value="Nøtter" />
+          Nøtter</label
+        >
+        <label
+          ><input type="checkbox" name="Allergier" value="Gluten" />
+          Gluten</label
+        >
+        <label
+          ><input type="checkbox" name="Allergier" value="Laktose" />
+          Laktose</label
+        >
+        <label
+          ><input type="checkbox" name="Allergier" value="Annet" />
+          Annet:</label
+        >
+        <textarea
+          name="Spesifikasjon av allergier"
+          placeholder="Skriv eventuelle detaljer her..."></textarea>
+      </div>
+
+      <h2>Spesielle ønsker</h2>
+      <textarea
+        name="Spesielle ønsker"
+        placeholder="F.eks. tema, ekstra pynt, spesifikke produkter..."></textarea>
+
+      <h2>Leveringsdetaljer</h2>
+      <label for="adresse">Leveringsadresse:</label>
+      <textarea id="adresse" name="Leveringsadresse"></textarea>
+
+      <label for="dato">Dato for levering:</label>
+      <input type="date" id="dato" name="Dato for levering" required />
+
+      <label for="tidspunkt">Ønsket tidspunkt for levering:</label>
+      <input type="time" id="tidspunkt" name="Tidspunkt" />
+
+      <label
+        ><input type="checkbox" name="Samtykke" required /> Jeg godkjenner at
+        mine opplysninger brukes til å behandle bestillingen.</label
+      >
+
+      <button type="submit">Send bestilling</button>
+    </form>
+    
+    </main> 
+
+     <footer>
+      <img
+        src="../image/banner.jpg"
+        alt="Helgesjappa banner"
+        class="footer-banner" />
+    </footer>
+  </body>
+</html>
